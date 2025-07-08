@@ -10,7 +10,7 @@ class CodingAgent:
     def __init__(self, model="qwen2.5:32b", debug=False):
         self.model = model
         self.client = OpenAI(
-            base_url="http://58.240.167.46:11434/v1/",
+            base_url="http://localhost:11434/v1/",
             api_key="ollama"
         )
         self.messages = [{"role": "system", "content": self._system_prompt()}]
