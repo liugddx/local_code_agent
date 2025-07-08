@@ -1,0 +1,20 @@
+.idea
+*.jsonl
+*.log
+40
+.ipynb_checkpoints
+# pycache
+__pycache__
+*.parquet
+*.duckdb
+*.txt
+*.out
+*.json
+bin/
+lib/
+lib64
+*.cfg
+*.docx
+output/
+*.pdf
+*.xlsx
