@@ -34,3 +34,13 @@ class Spinner:
             self.spinner_thread.join()
         sys.stdout.write(f"\r{self.message} ✓\n")
         sys.stdout.flush()
+    
+    def __enter__(self):
+        """进入上下文管理器"""
+        self.start()
+        return self
+    
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        """退出上下文管理器"""
+        self.stop()
+        return False

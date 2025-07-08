@@ -14,6 +14,7 @@ sys.path.append(str(Path(__file__).parent))
 
 from agent.coding_agent import CodingAgent
 
+
 def main():
     parser = argparse.ArgumentParser(description="Code Agent - 智能编程助手")
     parser.add_argument("--model", default="qwen2.5:32b", help="使用的模型名称")
@@ -77,6 +78,7 @@ def main():
         if args.save:
             agent.save_conversation(args.save)
 
+
 def show_help():
     """显示帮助信息"""
     help_text = """
@@ -104,6 +106,7 @@ def show_help():
   - 项目结构分析
     """
     print(help_text)
+
 
 if __name__ == "__main__":
     main()
